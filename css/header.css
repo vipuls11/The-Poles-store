@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --darkblue: #0C0F86;
+    --blue:#67A9E2;
+    --darkblues:#00024A;
+    --white: #ffffff;
+    --yellow:#FFD600;
+    --white:white;
+    --black: black;
+    --orange: #FF2727;
+  }
+
+  .mini-header{
+      padding-bottom: 5px;
+  }
+
+  .mini-header ul{
+   text-decoration: none;
+   list-style: none;
+   align-items: end;
+   font-size: 14px;
+   cursor: pointer;
+  }
+ 
+
+  .user-details ul{
+    align-items: end;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .cart{
+    position: relative;
+  }
+
+  .Cart-span{
+    position: absolute;
+    top: -2px;
+    right:-5px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 5px;
+    padding-top: 2px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* 
+  .............main-header............. */
+
+  .main-header ul{
+    list-style: none;
+    font-size:15px;
+  }
+
+  .main-header li a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .main-header{
+    align-items: center;
+    padding: 10px 0px;
+    border-top: 1px solid var(--darkblue);
+    border-bottom: 1px solid var(--darkblue);
+  }
+  
+  .search-box{
+    font-size: 15px;
+    background-color: var(--blue);
+    padding: 6px;
+  }
+  .search-box i{
+    font-size: 22px;
+  }
+
+  .search-box input{
+    outline:0px;
+    border:none;
+    background-color: transparent;
+    width: 300px;
+    padding: 0px 5px;
+    color: var(--black);
+  }
+
+  .Category-menu li a{ 
+    position: relative;
+    padding: 21px 0px;
+}
+.Category-menu li a:after{
+    content:"";
+    position: absolute;
+    background-color: var(--darkblues); 
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.Category-menu li a:hover:after{
+    width: 100%;
+}
+
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    .search-box input{
+        width: 200px;
+      }
+}
+ 
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .search-box input{
+        width: 250px;
+      }
+}
+ 
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .search-box input{
+        width: 300px; 
+      }
+}
+ 
+/* ...........Drawer inside body css......... */
+.mobile-category{
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.mobile-category a{
+    color: var(--black);
+    text-decoration: none;
+    color: var(--white);
+}
+
+.mobile-category li{
+    margin: 10px 0px;
+    padding: 8px 8px;
+    outline: none;
+    border:1px solid black;
+    border-radius: 8px;
+    background-color: var(--blue); 
+}
+
+.mobile-category li:hover{
+    background-color: var(--darkblues);
+}
